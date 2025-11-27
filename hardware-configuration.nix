@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.loader.grub.gfxmodeEfi = lib.mkDefault "720x1280x32"
+  boot.loader.grub.gfxmodeEfi = lib.mkDefault "720x1280x32";
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" "xpad" ];
