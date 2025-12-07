@@ -28,6 +28,10 @@ in {
   #
   hardware.xone.enable = true;
 
+
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
+
   #
   # Jovian
   #
@@ -100,7 +104,7 @@ in {
     # hashedPassword sets the initial password. Use `passwd` to change it.
     users.${gameuser} = {
       description = "${gameuser}";
-      extraGroups = ["gamemode" "networkmanager"];
+      extraGroups = ["gamemode" "networkmanager" "disk" "storage"];
       group = "${gameuser}";
       hashedPassword = "$6$FOpTFgnDq2aJdK4l$0c6L2GXsH.ezqrPzJq0oL35MV0moHo0QsDXSPxnnYet0p7wzh5T7daVQGPPRdKxV8v3i7JBNuYdRqBbcOxroZ0"; # <<<--- Generate your own initial hashed password
       home = "/home/${gameuser}";
