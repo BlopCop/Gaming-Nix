@@ -63,6 +63,10 @@ in {
     };
   };
 
+  xdg.portal = {
+      enable = true;
+    };
+
   #
   # Steam
   #
