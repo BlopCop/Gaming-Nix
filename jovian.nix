@@ -51,6 +51,9 @@ in {
   environment.systemPackages = with pkgs; [
     cmake # Cross-platform, open-source build system generator
     steam-rom-manager # App for adding 3rd party games/ROMs as Steam launch items
+    usbutils
+    udiskie
+    udisks
   ];
 
   #
