@@ -40,8 +40,7 @@ in {
   jovian.steam.desktopSession = "gnome";
   jovian.steamos.useSteamOSConfig = true;
   jovian.decky-loader.enable = true;
-  jovian.devices.steamdeck.enableControllerUdevRules = true;
-
+  jovian.steamos.enableAutoMountUdevRules = true;
   #
   # Packages
   #
