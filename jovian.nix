@@ -109,7 +109,7 @@ in {
       hashedPassword = "$6$FOpTFgnDq2aJdK4l$0c6L2GXsH.ezqrPzJq0oL35MV0moHo0QsDXSPxnnYet0p7wzh5T7daVQGPPRdKxV8v3i7JBNuYdRqBbcOxroZ0"; # <<<--- Generate your own initial hashed password
       home = "/home/${gameuser}";
       isNormalUser = true;
-      uid = 10000;
+      uid = 1000;
     };
   };
 }
