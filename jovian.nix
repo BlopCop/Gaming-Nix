@@ -28,10 +28,6 @@ in {
   #
   hardware.xone.enable = true;
 
-
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
-
   #
   # Jovian
   #
@@ -44,6 +40,7 @@ in {
   jovian.steam.desktopSession = "gnome";
   jovian.steamos.useSteamOSConfig = true;
   jovian.decky-loader.enable = true;
+  jovian.devices.steamdeck.enableControllerUdevRules = true;
 
   #
   # Packages
@@ -51,9 +48,6 @@ in {
   environment.systemPackages = with pkgs; [
     cmake # Cross-platform, open-source build system generator
     steam-rom-manager # App for adding 3rd party games/ROMs as Steam launch items
-    usbutils
-    udiskie
-    udisks
   ];
 
   #
